@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="game.js" defer=""></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Adivina el número</title>
+</head>
+
+<body>
+
+   <h1>Puedes adivinar el numero?</h1>
+
+    <div class="content">
+        <p id="mensaje"></p>
+        <p id="textPart">Ingresa un número del 1 al 100</p>
+        <input type="number" name="" id="numeroUsuario">
+        <button id="adivinar" onclick="adivinarNumero()">Adivinar</button>
+        <button id="reiniciar" type="reset" onclick="reiniciar()">Reiniciar</button>
+
+        <div id="intento">
+            <p><span id="intentos">Te quedan solo 5 intentos</span></p>
+        </div>
+   </div>
+
+    
+
+    <footer>
+        <p id="version">1.4</p>
+    </footer>
+</body>
+
+</html>

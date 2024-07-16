@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(gray, #12024b);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content {
+    border-style: groove;
+    border-radius: 3%;
+    border-color: black;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 60vh;
+    width: 400px;
+    /* background: linear-gradient(white , rgb(42, 156, 209)); */
+    background-image: url(fondo1.png);
+}
+
+#textPart {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    color: #ffffff;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    width: 60%;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #413f3e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3 ease;
+}
+#adivinar:hover {
+    background-color: green;
+    box-shadow: 0 0 20px green;
+    transition: all 0.5s;
+}
+
+#reiniciar:hover {
+    background-color: red;
+    box-shadow: 0 0 20px red;
+    transition: all 0.5s;
+}
+
+p {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#mensaje {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #12024b;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    input {
+        width: 80%;
+    }
+
+    button {
+        width: 80%;
+    }
+}
