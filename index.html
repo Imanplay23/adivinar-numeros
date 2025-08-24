@@ -4,32 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.png">
     <script src="game.js" defer=""></script>
     <link rel="stylesheet" href="style.css">
-    <title>Adivina el número</title>
+    <title>Adivina el Número</title>
 </head>
 
 <body>
+    <h1>¿Puedes adivinar el número?</h1>
 
-   <h1>Puedes adivinar el numero?</h1>
-
-    <div class="content">
-        <p id="mensaje"></p>
-        <p id="textPart">Ingresa un número del 1 al 100</p>
-        <input type="number" name="" id="numeroUsuario">
-        <button id="adivinar" onclick="adivinarNumero()">Adivinar</button>
-        <button id="reiniciar" type="reset" onclick="reiniciar()">Reiniciar</button>
-
-        <div id="intento">
-            <p><span id="intentos">Te quedan solo 5 intentos</span></p>
+    <div class="game-container">
+        <div class="instruction">
+            Ingresa un número del 1 al 100
         </div>
-   </div>
-
+        
+        <div class="input-group">
+            <input type="number" id="numeroUsuario" min="1" max="100" placeholder="Tu número...">
+        </div>
+        
+        <div class="button-group">
+            <button class="btn-guess" onclick="adivinarNumero()">🎯 Adivinar</button>
+            <button class="btn-reset" onclick="reiniciar()">🔄 Reiniciar</button>
+        </div>
+        
+        <div class="message">
+            <div id="mensaje"></div>
+        </div>
+        
+        <div class="attempts">
+            <div id="intentos">Te quedan 5 intentos</div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar" style="width: 100%"></div>
+            </div>
+        </div>
+    </div>
     
-
     <footer>
-        <p id="version">1.4</p>
+        <span>v2.0</span>
     </footer>
+     </div>
+   </div>
 </body>
-
 </html>
