@@ -82,7 +82,7 @@ class JuegoAdivinanza {
       ? `El número a adivinar es más grande, te quedan ${this.intentosRestantes} intentos`
       : `El número a adivinar es más pequeño, te quedan ${this.intentosRestantes} intentos`;
 
-    this.actualizarInterfaz(mensaje, "warning", mensajeVoz);
+    // this.actualizarInterfaz(mensaje, "warning", mensajeVoz);
   }
 
   manejarDerrota() {
